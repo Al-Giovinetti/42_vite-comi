@@ -1,7 +1,7 @@
 <template>
-    <p>ciao 1</p>
-    <SingleComic v-for="comic in comics" :comicInfo="comic"/>
-
+    <div id="cards-box">
+        <SingleComic v-for="comic in comics" :comicInfo="comic"/>
+    </div>
 </template>
 
 <script>
@@ -97,6 +97,10 @@ export default{
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+    #cards-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 </style>
