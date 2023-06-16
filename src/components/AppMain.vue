@@ -18,10 +18,10 @@ export default{
 
 main{
     background-color: black;
+    padding: 2rem 0;
 }
 
 p{
-    padding: 3rem 0;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;

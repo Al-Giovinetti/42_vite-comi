@@ -1,8 +1,30 @@
 <script>
 export default{
-    name: "AppHeader"
+    name: "AppHeader",
+    data() {
+        return {
+            ActiveIndex:0,
+            categories:
+            [
+                "characters",
+                "comics",
+                "movies",
+                "tv",
+                "games",
+                "collectibles",
+                "videos",
+                "fans",
+                "news",
+                "shop"
+            ]
+        }
+    },
+    methods:{
+        changeActiveIndex(index){
+            this.ActiveIndex = index
+        }
+    }    
 }
-
 </script>
 
 <template>
@@ -13,16 +35,9 @@ export default{
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">characters</a></li>
-                    <li><a href="#">comics</a></li>
-                    <li><a href="#">movies</a></li>
-                    <li><a href="#">tv</a></li>
-                    <li><a href="#">games</a></li>
-                    <li><a href="#">collectibles</a></li>
-                    <li><a href="#">videos</a></li>
-                    <li><a href="#">fans</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">shop</a></li>
+                    <li v-for="(category) in categories">
+                        {{ category }}
+                    </li>
                 </ul>
             </nav>
 
@@ -34,21 +49,23 @@ export default{
 
 <style lang="scss" scoped>
 header{
-    background-color: red;
+    background-color: white
 }
 
 div.container{
+    height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-        & ul{
+        ul{
             display: flex;
         };
 
-        & li{
-            border-bottom: 3px solid black;
+        li{
             padding:0 0.5rem 2rem;
             margin: 0 0.5rem;
+
         }
 }
 

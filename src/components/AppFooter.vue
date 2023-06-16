@@ -9,27 +9,29 @@ export default{
     <footer>
         <div class="jumbotrone footer-top">
             <div class="container">
-                <div class="column">
-                    <h3>dc comics</h3>
-                    <ul>
-                        <li>aaaaa</li>
-                    </ul>
-                    <h3>shop</h3>
-                    <ul>
-                        <li>aaaaa</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>dc</h3>
-                    <ul>
-                        <li>aaaaaa</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Sites</h3>
-                    <ul>
-                        <li>aaaa</li>
-                    </ul>
+                <div class="columns">
+                    <div>
+                        <h3>dc comics</h3>
+                        <ul>
+                            <li>aaaaa</li>
+                        </ul>
+                        <h3>shop</h3>
+                        <ul>
+                            <li>aaaaa</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>dc</h3>
+                        <ul>
+                            <li>aaaaaa</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Sites</h3>
+                        <ul>
+                            <li>aaaa</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,20 +55,31 @@ export default{
 
 <style lang="scss" scoped>
 footer{
-    background-color: grey;
+    background-color: #303030;
 }
 
 div.jumbotrone{
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
+    height: 50vh;
+
+    &>.container{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        
+    }
 }
 
-div.footer-top>.container{
+div.footer-top .columns{
     display: flex;
     color: white;
     padding: 1.5rem 0;
 
-    & .column{
+    &>div{
        padding-right: 1.5rem;
     }
 }
@@ -75,19 +88,17 @@ div.footer-bottom>.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 div.box-other-app{
     display: flex;
     align-items: center;
 
-    & *{
+    *{
         padding: 0 0.5rem;
     }
 }
-
-
 
 
 </style>
