@@ -19,7 +19,6 @@ export default{
 <style lang="scss" scoped>
 
 main{
-    background-color: black;
     padding: 2rem 0;
 }
 
