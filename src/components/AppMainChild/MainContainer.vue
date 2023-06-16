@@ -1,4 +1,7 @@
 <template>
+    <div class="jumbotrone">
+        <img src="../../assets/img/jumbotron.jpg" alt="Teen Taitans">
+    </div>
     <div id="cards-box">
         <SingleComic v-for="comic in comics" :comicInfo="comic"/>
     </div>
@@ -98,6 +101,18 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+    div.jumbotrone{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 2rem;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
     #cards-box{
         display: flex;
         flex-wrap: wrap;

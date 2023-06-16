@@ -40,6 +40,7 @@ div.card{
     p{
         text-align: center;
         padding: 1.5rem;
+        color: white;
     }
 
 
