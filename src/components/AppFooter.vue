@@ -11,25 +11,46 @@ export default{
             <div class="container">
                 <div class="columns">
                     <div>
-                        <h3>dc comics</h3>
+                        <h2>dc comics</h2>
                         <ul>
-                            <li>aaaaa</li>
+                            <li> <a href="#">Characters</a> </li>
+                            <li> <a href="#">Comics</a> </li>
+                            <li> <a href="#">Movies</a> </li>
+                            <li> <a href="#">Tv</a> </li>
+                            <li> <a href="#">Games</a> </li>
+                            <li> <a href="#"> Videos</a> </li>
+                            <li> <a href="#">News</a> </li>
                         </ul>
-                        <h3>shop</h3>
+                        <h2>shop</h2>
                         <ul>
-                            <li>aaaaa</li>
+                            <li> <a href="#">Shop DC</a> </li>
+                            <li> <a href="#">Shop DC Collectibles</a> </li>
                         </ul>
                     </div>
                     <div>
-                        <h3>dc</h3>
+                        <h2>dc</h2>
                         <ul>
-                            <li>aaaaaa</li>
+                            <li> <a href="#">Terms Of Use</a> </li>
+                            <li> <a href="#">Privacy policy(New)</a> </li>
+                            <li> <a href="#">Ad Choices</a> </li>
+                            <li> <a href="#">Advertising</a> </li>
+                            <li> <a href="#">Jobs</a> </li>
+                            <li> <a href="#">Subscriptions</a> </li>
+                            <li> <a href="#">Talent Workshops</a> </li>
+                            <li> <a href="#">CPSC Certificates</a> </li>
+                            <li> <a href="#">Ratings</a> </li>
+                            <li> <a href="#">Shop Help</a> </li>
+                            <li> <a href="#">Contact Us</a> </li> 
                         </ul>
                     </div>
                     <div>
-                        <h3>Sites</h3>
+                        <h2>Sites</h2>
                         <ul>
-                            <li>aaaa</li>
+                            <li> <a href="#">DC</a> </li>
+                            <li> <a href="#">MAD Magazine</a> </li>
+                            <li> <a href="#">DC Kids</a> </li>
+                            <li> <a href="#">DC Universe</a> </li>
+                            <li> <a href="#">DC Power Visa</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -61,7 +82,6 @@ footer{
 div.jumbotrone{
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
-    height: 50vh;
 
     &>.container{
         display: flex;
@@ -70,6 +90,7 @@ div.jumbotrone{
         background-image: url(../assets/img/dc-logo-bg.png);
         background-position: right;
         background-repeat: no-repeat;
+        background-size: 40%;
         
     }
 }
@@ -79,8 +100,12 @@ div.footer-top .columns{
     color: white;
     padding: 1.5rem 0;
 
-    &>div{
+    >div{
        padding-right: 1.5rem;
+    }
+
+    a{
+        color: white;
     }
 }
 
