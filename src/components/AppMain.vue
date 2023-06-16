@@ -1,15 +1,17 @@
 <script>
+import MainContainer from './AppMainChild/MainContainer.vue';
 export default{
-    name: "AppMain"
+    name: "AppMain",
+    components:{
+    MainContainer
+}
 }
 
 </script>
 
 <template>
     <main>
-        <div class="container">
-            <p> - Content goes here - </p>
-        </div>
+        <MainContainer class="container"/>
     </main>
 
 </template>
