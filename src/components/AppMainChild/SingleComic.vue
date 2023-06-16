@@ -1,11 +1,19 @@
 <template>
-    <p>ciao2</p>
+    <div>
+        <img :src="comicInfo.thumb" alt="">
+    </div>
+    <p>{{ comicInfo.series }}</p>
+    
 
 </template>
 
 <script>
 export default{
-    name:"SingleComic"
+    name:"SingleComic",
+    props:{
+        comicInfo : String
+    }
+
 }
 
 </script>

@@ -1,6 +1,6 @@
 <template>
     <p>ciao 1</p>
-    <SingleComic />
+    <SingleComic v-for="comic in comics" :comicInfo="comic"/>
 
 </template>
 
