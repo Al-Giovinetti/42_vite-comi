@@ -35,7 +35,7 @@ export default{
             </div>
             <nav>
                 <ul>
-                    <li v-for="(category) in categories">
+                    <li v-for="(category,index) in categories" @click="changeActiveIndex(index)" :class="index == ActiveIndex ? 'active' : '' ">
                         {{ category }}
                     </li>
                 </ul>
@@ -79,6 +79,11 @@ div.box-img{
 
 nav{
     align-self: flex-end;
+}
+
+.active{
+    color: blue;
+    border-bottom: 3px solid blue;
 }
 
 </style>
