@@ -20,14 +20,12 @@ export default{
 
 <style lang="scss" scoped>
 div.card{
-    border: 1px red;
-    width: calc(100% / 5);
-    margin-bottom: 2rem;
+    width: calc(100% / 6 - 1rem);
+    margin: 0 0.5rem 1.5rem
 }
     div.img-box{
-        height: 250px;
-        width: 150px;
-        margin: auto;
+        height: 300px;
+        width: 100%;
 
         img{
             height: 100%;
@@ -38,8 +36,7 @@ div.card{
     }
 
     p{
-        text-align: center;
-        padding: 1.5rem;
+        padding-top: 1.5rem;
         color: white;
     }
 

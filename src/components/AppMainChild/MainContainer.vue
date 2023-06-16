@@ -2,7 +2,7 @@
     <div class="jumbotrone">
         <img src="../../assets/img/jumbotron.jpg" alt="Teen Taitans">
     </div>
-    <div id="cards-box">
+    <div id="cards-box" class="container">
         <SingleComic v-for="comic in comics" :comicInfo="comic"/>
     </div>
 </template>
