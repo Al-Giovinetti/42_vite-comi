@@ -3,7 +3,9 @@
         <img src="../../assets/img/jumbotron.jpg" alt="Teen Taitans">
     </div>
     <div id="cards-box" class="container">
+        <span>current series</span>
         <SingleComic v-for="comic in comics" :comicInfo="comic"/>
+        <button>Load More</button>
     </div>
 </template>
 
@@ -116,6 +118,27 @@ export default{
     #cards-box{
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+
+        span{
+            position: absolute;
+            bottom: 101.5%; left: 1%;
+            background-color: blue;
+            color: white;
+            padding: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        button{
+            padding: 0.8rem;
+            color: white;
+            text-transform: uppercase;
+            background-color: blue;
+            border: 0;
+            margin: auto;
+        }
     }
+
 
 </style>
