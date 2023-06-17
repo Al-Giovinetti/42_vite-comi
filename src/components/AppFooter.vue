@@ -124,6 +124,14 @@ div.footer-bottom>.container{
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
+
+    button{
+        padding: 0.8rem;
+        border: 2px solid blue;
+        background-color: #303030;
+        color: white;
+        text-transform: uppercase;
+    }
 }
 
 div.box-other-app{
@@ -132,6 +140,11 @@ div.box-other-app{
 
     *{
         padding: 0 0.5rem;
+    }
+
+    span{
+        color: blue;
+        text-transform: uppercase;
     }
 }
 
