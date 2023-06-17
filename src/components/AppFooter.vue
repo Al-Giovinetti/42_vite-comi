@@ -83,7 +83,7 @@ div.jumbotrone{
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
 
-    &>.container{
+    >.container{
         display: flex;
         justify-content: space-between;
         height: 100%;
@@ -102,6 +102,16 @@ div.footer-top .columns{
 
     >div{
        padding-right: 1.5rem;
+    }
+
+    h2{
+        padding-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    li{
+        font-size: 0.8rem;
+        padding-bottom: 0.5rem;
     }
 
     a{
